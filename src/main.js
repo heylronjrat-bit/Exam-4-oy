@@ -7,6 +7,7 @@ import { connectDB } from './config/server.js'
 const app = express()
 const PORT = process.env.PORT
 
+app.use(express..json())
 app.use('/api/movies', router)
 
 await connectDB()
